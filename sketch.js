@@ -12,6 +12,12 @@ function draw() {
   line(200,200,200,0)
   line(0,180,400,180)
 
+  //jalann
+  line(20,190,40,190)
+  line(60,190,80,190)
+  line(100,190,120,190)
+  line(140,190,160,190)
+  
   //Kiri
   strokeWeight(0)
   fill(255,255,255)
@@ -63,6 +69,7 @@ function draw() {
   }
   var y=265+5*Math.sin(PI*j/20)
   var r=230+10*Math.sin(PI*j/20)
+  var a=230+15*Math.sin(PI*j/10)
   j+=1
 
   //Kanan
@@ -88,6 +95,14 @@ function draw() {
   line(235,125,315,125)
   line(315,125,315,175)
   line(235,175,315,175)
+
+  //jalann
+  line(a,190,a+10,190)
+  line(a+30,190,a+40,190)
+  line(a+60,190,a+70,190)
+  line(a+90,190,a+100,190)
+  line(a+120,190,a+130,190)
+  line(a+150,190,a+160,190)
 
   //buntut
   strokeWeight(2)
