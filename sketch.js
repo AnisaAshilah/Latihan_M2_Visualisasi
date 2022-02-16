@@ -67,36 +67,39 @@ function draw() {
     y=300+ 20*Math.sin(PI*x/20)
     point(x,y)
   }
-  var y=265+5*Math.sin(PI*j/20)
-  var r=230+10*Math.sin(PI*j/20)
-  var a=230+15*Math.sin(PI*j/10)
+ 
+  
+  
   j+=1
 
   //Kanan
- 
+  var c=295+10*Math.floor(PI*j/20)
   strokeWeight(0)
   fill(255,255,255)
-  rect(295,130,32,45)
-  rect(295,150,50,25)
-  triangle(325,130,325,150,345,150)
+  rect(c,130,32,45)
+  rect(c,150,50,25)
+  triangle(c+30,130,c+30,150,c+50,150)
   fill(169,169,169)
-  rect(235,125,80,50)
+  rect(c-60,125,80,50)
   
   //pala truk
   strokeWeight(2)
-  line(315,130,327,130)
-  line(327,130,345,150)
-  line(327,150,345,150)
-  line(327,135,327,150)
-  line(345,150,345,175)
-  line(315,175,345,175)
+  var l=315+10*Math.floor(PI*j/20)
+  line(l,130,l+12,130)
+  line(l+12,130,l+30,150)
+  line(l+12,150,l+30,150)
+  line(l+12,135,l+12,150)
+  line(l+30,150,l+30,175)
+  line(l,175,l+30,175)
 
   //badan truk
-  line(235,125,315,125)
-  line(315,125,315,175)
-  line(235,175,315,175)
+  var l1=235+10*Math.floor(PI*j/20)
+  line(l1,125,l1+80,125)
+  line(l1+80,125,l1+80,175)
+  line(l1,175,l1+80,175)
 
   //jalann
+  var a=230+15*Math.sin(PI*j/10)
   line(a,190,a+10,190)
   line(a+30,190,a+40,190)
   line(a+60,190,a+70,190)
@@ -105,6 +108,7 @@ function draw() {
   line(a+150,190,a+160,190)
 
   //buntut
+  var r=230+10*Math.floor(PI*j/20)
   strokeWeight(2)
   stroke(255,0,0)
   line(r,165,240,165)
@@ -118,11 +122,13 @@ function draw() {
   strokeWeight(2)
   stroke(0,0,0)
   //roda
+  var b=270+10*Math.floor(PI*j/20)
+  var y=20+0.5*Math.sin(PI*j/10)
   strokeWeight(2)
   stroke(0,0,0)
   fill(255,255,255)
-  ellipse(y,175,20,20)
-  ellipse(y+60,175,20,20)
+  ellipse(b,175,y,y)
+  ellipse(b+60,175,y,y)
   //
  
 
